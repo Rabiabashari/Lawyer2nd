@@ -1,0 +1,364 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+}
+.nav-link{
+    font-family: 'Montserrat', sans-serif;
+    color: #204f87;
+    font-weight: 600;
+
+}
+.nav-link:hover{
+    color: #12243b;
+}
+.banner{
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+}
+.banner h1{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 80px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.icon{
+    position: absolute;
+    left: 50%;
+    color: #fff;
+    font-size: 20px;
+    transform: translateX(-50%);
+    top: 80%;
+    animation: updown 2s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes updown{
+    0%{
+        top:80%;
+    }
+    100%{
+        top: 85%;
+    }
+}
+.hg{
+    min-height:92vh;
+    align-items: center;
+}
+.who_we_are{
+    padding: 70px 0px;
+}
+.who_we_are span{
+    display: block;
+    height: 3px;
+    width: 50px;
+    background: #f15528;
+    margin-top: 20px;
+}
+.who_we_are h1{
+    font-family: 'Montserrat', sans-serif;
+    color: #204f87;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 16px;
+}
+.who_we_are p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #b0b0b1;
+    margin-top: 18px;
+}
+.what_we_do{
+    background-color: #f7f8f8;
+    padding: 70px 0px;
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-position:  bottom  right;
+    background-size: 70%;
+}
+.what_we_do span{
+    display: block;
+    height: 3px;
+    width: 50px;
+    background: #f15528;
+    margin: auto;
+}
+.what_we_do h2{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 37px;
+    font-weight: 700;
+    color: #204f87;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.item{
+    padding-top: 50px;
+    position: relative;
+}
+.item img{
+    width: 100%;
+}
+.item h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    opacity: 0;
+    transition: .5s all ease-in-out;
+}
+.item i{
+    position: absolute;
+    top: 80%;
+    left: 47%;
+    transform: translateX(-50%);
+    color: #fff;
+    opacity: 0;
+    transition: .5s all ease-in-out;
+    font-size: 20px;
+}
+.item:hover h1{
+    opacity: 1;
+    top: 50%;
+}
+.item:hover i{
+    opacity: 1;
+    left: 50%;
+}
+.item::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#28377e+0,28377e+100&0+0,1+100 */
+    background: -moz-linear-gradient(top,  rgba(40,55,126,0) 0%, rgba(40,55,126,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(40,55,126,0) 0%,rgba(40,55,126,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(40,55,126,0) 0%,rgba(40,55,126,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0028377e', endColorstr='#28377e',GradientType=0 ); /* IE6-9 */
+    transition: .5s all ease-in-out;
+}
+.item:hover::before{
+    height: 100%;
+}
+.attorneys{
+    background-image: url(../images/bg2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 150px 0px;
+} 
+.attorneys span{
+    display: block;
+    height: 3px;
+    width: 50px;
+    background: #f15528;
+    margin-top: 50px;
+}
+.attorneys h1{
+   font-family: 'Montserrat', sans-serif;
+   font-size: 36px;
+   font-weight: 600;
+   color: #fff;
+   margin: 30px 0px;
+}
+.attorneys p{
+    font-family: 'Open Sans', sans-serif;
+   font-size: 16px;
+   color: #b0b0b1;
+   margin: 20px 0px;
+}
+.attorneys a{
+    font-family: 'Montserrat', sans-serif;
+    color: #f15528;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+.attorneys a:hover{
+    color: #832106;
+}
+.our_attorneys{
+    position: relative;
+    overflow: hidden;
+}
+.our_attorneys h2{
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 70%;
+    left: 8%;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+    opacity: 0;
+    transition: .5s all ease-in-out;
+}
+.our_attorneys:hover h2{
+    opacity: 1;
+    left: 10%;
+}
+.our_attorneys::before{
+    content: '';
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    height: 0%;
+    width: 100%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4c518c+0,4c518c+100&0+0,1+100 */
+    background: -moz-linear-gradient(top,  rgba(76,81,140,0) 0%, rgba(76,81,140,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(76,81,140,0) 0%,rgba(76,81,140,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(76,81,140,0) 0%,rgba(76,81,140,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004c518c', endColorstr='#4c518c',GradientType=0 ); /* IE6-9 */
+    transition: .5s all ease-in-out;
+}
+.our_attorneys:hover::before{
+    height: 100%;
+}
+.language{
+    padding: 150px 0px;
+}
+.language span{
+    display: block;
+    height: 3px;
+    width: 50px;
+    background: #f15528;
+    margin: auto;
+}
+.language h1{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #204f87;
+    text-transform: uppercase;
+    margin: 20px 0px;
+}
+.language h4{
+    font-family: 'Montserrat', sans-serif;
+    color: #204f87;
+    text-transform: uppercase;
+    font-size: 30pxpx;
+    font-weight: 700;
+    margin-top: 16px;
+}
+.language p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #b0b0b1;
+    margin-top: 18px;
+}
+.language a{
+    font-family: 'Open Sans', sans-serif;
+    color: #f15528;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+}
+.language a:hover{
+    color: #a32e0e;
+}
+.form_part{
+    background-color: #28377e;
+    padding: 110px 0px;
+}
+.form_part span{
+    display: block;
+    height: 3px;
+    width: 50px;
+    background: #f15528;
+    margin: auto;
+}
+.form_part h1{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 30px 0px;
+    display: block;
+}
+.form-part form{
+    align-items: center;
+}
+.form_part form input{
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-bottom: 1px solid #6c7ea1;
+    text-transform: capitalize;
+    border-radius: 0;
+    background: transparent;
+}
+.form_part form textarea{
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-bottom: 1px solid #6c7ea1;
+    text-transform: capitalize;
+    border-radius: 0;
+    background: transparent;
+}
+.form_part form input::placeholder, .form_part form textarea::placeholder{
+    color: #b0b0b1;}
+
+.form_part form input:focus, .form_part form textarea:focus{
+    color: #b0b0b1;
+    box-shadow: none;
+    background: transparent;
+}
+button{
+    display: block;
+    margin: auto;
+    color: #fff;
+    padding: 13px 80px;
+    background-color: #f2622c;
+    border: none;
+    border: 1px solid #6c7ea1;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 2px;
+    transition: .5s all ease-in-out;
+}
+button:hover{
+    background-color: #ca4514;
+    color: #fff;
+}
+footer{
+    padding: 30px 0px;
+    background-color: #0c1234;
+    display: flex;
+    align-items: center;
+    line-height: 30px;
+}
+footer p{
+    font-family: 'Open Sans', sans-serif;
+    color: #b0b0b1;
+    line-height: 30px;
+    margin: 0;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    margin: 0;
+}
+footer ul li{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    margin-left: 25px;
+}
+footer ul li a{
+    font-family: 'Open Sans', sans-serif;
+    color: #b0b0b1;
+}
